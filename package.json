@@ -3,7 +3,7 @@
     "README2": "Replace the S3_PROFILE with your s3 profile name.",
     "name": "choo-app-template",
     "version": "0.0.1",
-    "description": "Experimenting with a app version of RealityBender",
+    "description": "no-build template for choo apps",
     "scripts": {
       "deploy-non-js":"aws s3 sync ./app/ s3://S3_BUCKET/app --exclude \"*.js\" --acl public-read --profile S3_PROFILE",
       "deploy-js": "aws s3 sync ./app/ s3://S3_BUCKET/app --exclude \".*\" --include \"*.js\" --acl public-read --profile S3_PROFILE --content-type \"application/javascript\"",
